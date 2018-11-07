@@ -1,0 +1,16 @@
+app:
+  jwtExpirationInMs: '604800000'
+  jwtSecret: fenerbahce
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+server:
+  port: '8080'
+spring:
+  ldap:
+      base-dn: DC=mycomp,DC=com
+      url: ldap://mycompany.com:8080/
+      userDn: CN=MY-APP,DC=mycomp,DC=com
+      password: ******
